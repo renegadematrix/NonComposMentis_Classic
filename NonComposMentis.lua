@@ -30,7 +30,7 @@ function NCM.OnReady()
 	_G.NonComposMentisDB.opts	= _G.NonComposMentisDB.opts or {};
 	_G.NonComposMentisDB.farms	= _G.NonComposMentisDB.farms or {};
 
-	NCMOptionsFrame.name = 'Non Compos Mentis';
+	NCMOptionsFrame.name = 'Non Compos Mentis Classic';
 	InterfaceOptions_AddCategory(NCMOptionsFrame);
 
 	NCM.NewZone();

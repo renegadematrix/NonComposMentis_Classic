@@ -1,8 +1,8 @@
-## Interface: 30300
-## Title : Non Compos Mentis
+## Interface: 11401
+## Title : Non Compos Mentis Classic
 ## Notes: Track your progress towards insanity.
-## Author: Cal Henderson (Bees on Hyjal-US)
-## Version: 1.4
+## Author: Renegadetrix Benediction-US
+## Version: 2.5.5
 ## Dependencies: 
 ## SavedVariablesPerCharacter: NonComposMentisDB
 NonComposMentis.lua
