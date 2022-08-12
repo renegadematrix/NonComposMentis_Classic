@@ -71,7 +71,7 @@ function NCM.OnEvent(frame, event, ...)
 
 	if (event == 'ADDON_LOADED') then
 		local name = ...;
-		if name == 'NonComposMentis' then
+		if name == 'NonComposMentis_Classic' then
 			NCM.OnReady();
 		end
 	end
@@ -273,7 +273,7 @@ function NCM.UpdateFrame()
 	local indent = "    ";
 	local reps = NCM.GetReps();
 
-
+	print(#reps)
 	--
 	-- did we get any reps at all?
 	--
@@ -731,21 +731,21 @@ end
 
 
 function NCM.GetReps()
-
+	print('NCM.GetReps()')
 	local factionMap = {};
 	local factionIndex = 1
 	repeat
 		local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith,
-		canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
-
+		canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canSetInactive = GetFactionInfo(factionIndex)
+		
 		if name == nil then break end
-
-		if isHeader == nil then
+		print(name .. " " .. tostring(isHeader))
+		if isHeader == false then
 			factionMap[name] = earnedValue;
 		end
-
+		
 		factionIndex = factionIndex + 1
-	until factionIndex > 200
+	until factionIndex > 999
 
 	return factionMap;
 end

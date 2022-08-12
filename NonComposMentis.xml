@@ -194,7 +194,7 @@
 				</Anchors>
 				<Layers>
 					<Layer level="OVERLAY">
-						<Texture file="Interface\AddOns\NonComposMentis\textures\ResizeGripRight" setAllPoints="true">
+						<Texture file="Interface\AddOns\NonComposMentis_Classic\textures\ResizeGripRight" setAllPoints="true">
 							<Color r="1" g="1" b="0" a="1"/>
 						</Texture>
 					</Layer>
@@ -227,7 +227,7 @@
 				</Anchors>
 				<Layers>
 					<Layer level="OVERLAY">
-						<Texture file="Interface\AddOns\NonComposMentis\textures\ResizeGripLeft" setAllPoints="true">
+						<Texture file="Interface\AddOns\NonComposMentis_Classic\textures\ResizeGripLeft" setAllPoints="true">
 							<Color r="1" g="1" b="0" a="1"/>
 						</Texture>
 					</Layer>
